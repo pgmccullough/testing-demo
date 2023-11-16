@@ -8,6 +8,6 @@ export const dateToReadable = (timestamp) => {
   const jsDate = new Date(timestamp);
   formattedDate = monthToStr(jsDate.getMonth());
   formattedDate += ` ${jsDate.getDate()}`;
-  formattedDate += `, ${jsDate.getFullYear()}`;
+  formattedDate += `,  ${jsDate.getFullYear()}`;
   return formattedDate;
 }
