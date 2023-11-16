@@ -1,0 +1,44 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0 2rem;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  &__label {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.5rem 0 0.25rem;
+  }
+  &__input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    &--error {
+      border-color: red;
+      box-shadow: 0 0 3px 0 red;
+    }
+  }
+  &__button {
+    margin-top: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 2rem;
+    background: rgb(235, 174, 152);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    &:disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+  }
+  &__error-message {
+    font-size: 0.75rem;
+    color: red;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 0.25rem;
+  }
+}

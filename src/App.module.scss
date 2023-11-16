@@ -1,0 +1,31 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background: rgb(142, 196, 142);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 6px 0 #000;
+  margin-bottom: 1rem;
+  &__title {
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.posts {
+  width: 100%;
+}
